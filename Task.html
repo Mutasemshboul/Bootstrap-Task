@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Navbar</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  .navbar {
+    background-color: #f8f9fa; /* Light background color */
+  }
+  .navbar-brand {
+    color: #8e83c6; /* Logo color */
+  }
+  .nav-link {
+    color: #6c757d; /* Link color */
+  }
+  .btn-outline-dark {
+    border-color: #f0ecfe;
+  }
+  .btn-outline-dark:hover{
+    background-color: #f0ecfe;
+  }
+  .btn-purple {
+    background-color: #6f42c1;
+    color: #ffffff;
+  }
+  .btn-purple:hover {
+    background-color: #5a34a5;
+  }
+  .icon-button {
+    background: none;
+    border: none;
+  }
+  .text-dark{
+    color: #755bfe;
+  }
+  .btn-primary{
+    background-color: #755bfe;
+  }
+  .btn-primary:hover{
+    background-color: #6f42c1;
+
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Orange</a>
+    <button class="btn btn-outline-dark me-4 text-dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+          </svg>                Category</button>
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarLandings" role="button" data-bs-toggle="dropdown" aria-expanded="false">Landings</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarLandings">
+            <li><a class="dropdown-item" href="#">Option 1</a></li>
+            <li><a class="dropdown-item" href="#">Option 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarPages">
+            <li><a class="dropdown-item" href="#">Page 1</a></li>
+            <li><a class="dropdown-item" href="#">Page 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarAccounts" role="button" data-bs-toggle="dropdown" aria-expanded="false">Accounts</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarAccounts">
+            <li><a class="dropdown-item" href="#">Account 1</a></li>
+            <li><a class="dropdown-item" href="#">Account 2</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarMegaMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mega Menu</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarMegaMenu">
+            <li><a class="dropdown-item" href="#">Menu 1</a></li>
+            <li><a class="dropdown-item" href="#">Menu 2</a></li>
+          </ul>
+        </li>
+      </div>
+    </div>
+    <button class="icon-button ms-auto me-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+            <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+          </svg>    </button>
+    <button class="icon-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+          </svg>
+    </button>
+    <button class="btn btn-outline-dark me-2">Sign in</button>
+    <button class="btn btn-purple">Sign up</button>
+  </div>
+</nav>
+
+<main>
+    <section class="py-lg-8 py-5">
+        <div class="container my-lg-8">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-6 mb-lg-0">
+                    <div>
+                        <h5 class="text-dark mb-4">
+                            Most trusted education platform
+
+                        </h5>
+                        <h1 class="display-3 fw-bold mb-3">
+                            Grow your skills and advance career
+
+                        </h1>
+                        <p class="pe-lg-10 mb-5">
+                            Start, switch, or advance your career with more than 5,000 courses, Professional Certificates, and degrees from world-class universities and companies.
+
+                        </p>
+                        <a href="#" class="btn btn-primary">Join Free Now</a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="position-relative">
+                        <img src="assests/img/trophy.svg">
+                        <img src="assests/img/girl-image.png" >
+                        <img src="assests/img/frame-1.svg">
+                        <img src="assests/img/frame-2.svg">
+                        <img src="assests/img/target.svg">
+                        <img src="assests/img/sound.svg">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="pb-8">
+        <div class="container mb-lg-8">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3 border-1">
+                    <!-- text -->
+                    <div class="py-7 text-center">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                              </svg>
+                        </div>
+                        <div class="lh-1">
+                            <h2 class="mb-1">316,000+</h2>
+                            <span>Qualified Instructor</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 border-top-md border-bottom border-end-lg">
+                    <!-- icon -->
+                    <div class="py-7 text-center">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                              </svg>
+                        </div>
+                        <!-- text -->
+                        <div class="lh-1 ">
+                            <h2 class="mb-1">1.8 Billion+</h2>
+                            <span>Course enrolments</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 border-top-lg border-bottom border-end-md">
+                    <!-- icon -->
+                    <div class="py-7 text-center">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M13.991 3l.024.001a1.5 1.5 0 0 1 .538.143.76.76 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.5 1.5 0 0 1-.143.538.76.76 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.5 1.5 0 0 1-.538-.143.76.76 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.5 1.5 0 0 1 .143-.538.76.76 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2"/>
+                              </svg>
+                        </div>
+                        <!-- text -->
+                        <div class="lh-1">
+                            <h2 class="mb-1">41,000+</h2>
+                            <span>Courses in 42 languages</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 border-top-lg border-bottom">
+                    <!-- icon -->
+                    <div class="py-7 text-center">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                              </svg>
+                        </div>
+                        <!-- text -->
+                        <div class="lh-1">
+                            <h2 class="mb-1">179,000+</h2>
+                            <span>Online Videos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5">
+        <div class="container mb-lg-8">
+            <div class="row">
+                <!-- col -->
+                <div class="col-12">
+                    <div class="mb-6">
+                        <h2 class="mb-1 h1">Most Popular Courses</h2>
+                        <p>These are the most popular courses among Geeks Courses learners worldwide in year 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Nav tab -->
+                    <ul class="nav nav-lb-tab mb-6 bg-gray-200 px-5 rounded-3" id="pills-tab" role="tablist">
+                        <!-- nav item -->
+                        <li class="nav-item ms-0" role="presentation">
+                            <a
+                                class="nav-link active"
+                                id="pills-development-tab"
+                                data-bs-toggle="pill"
+                                href="#pills-development"
+                                role="tab"
+                                aria-controls="pills-development"
+                                aria-selected="true">
+                                Development
+                            </a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-design-tab" data-bs-toggle="pill" href="#pills-design" role="tab" aria-controls="pills-design" aria-selected="false">Design</a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-marketing-tab" data-bs-toggle="pill" href="#pills-marketing" role="tab" aria-controls="pills-marketing" aria-selected="false">
+                                Marketing
+                            </a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-business-tab" data-bs-toggle="pill" href="#pills-business" role="tab" aria-controls="pills-business" aria-selected="false">
+                                Business
+                            </a>
+                        </li>
+                        <!-- nav item -->
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-health-tab" data-bs-toggle="pill" href="#pills-health" role="tab" aria-controls="pills-health" aria-selected="false">Health</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <span class="badge bg-success">Beginner</span>
+                                  <span class="ms-auto  bd-highlight">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                        </svg>
+                                  </span>
+                              </div>
+          
+                            <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                           
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer d-flex">
+                            <p><b>$29.00</b></p>
+                            <a class="ms-auto p-2 bd-highlight">Get Enrolled</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <span class="badge bg-success">Beginner</span>
+                                <span class="ms-auto  bd-highlight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                      </svg>
+                                </span>
+                            </div>
+        
+                          <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                         
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex">
+                            <p><b>$29.00</b></p>
+                            <a class="ms-auto p-2 bd-highlight">Get Enrolled</a>
+                            
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                          <img src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <span class="badge bg-danger">Hard</span>
+                                  <span class="ms-auto  bd-highlight">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                        </svg>
+                                  </span>
+                              </div>
+          
+                            <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                           
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer d-flex">
+                            <p><b>$29.00</b></p>
+                            <a class="ms-auto p-2 bd-highlight">Get Enrolled</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="https://geeksui.codescandy.com/geeks/assets/images/course/course-css.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <div class="d-flex">
+                                  <span class="badge bg-primary">Intermidet</span>
+                                  <span class="ms-auto  bd-highlight">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                          <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                        </svg>
+                                  </span>
+                              </div>
+          
+                            <h5 class="card-title">CSS: ultimate CSS course from beginner to advanced</h5>
+                           
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          </div>
+                          <div class="card-footer d-flex">
+                            <p><b>$29.00</b></p>
+                            <a class="ms-auto p-2 bd-highlight">Get Enrolled</a>
+                            
+                          </div>
+                        </div>
+                        
+                      </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
